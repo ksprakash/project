@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{9444C80B-10F4-4FA5-B3E6-BBC16F0B66AD}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <StartupObject>
+    </StartupObject>
+    <RootNamespace>Git</RootNamespace>
+    <AssemblyName>ConsoleApplication</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Console</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".gitattributes" />
+    <Content Include=".gitignore" />
+    <Content Include=".git\ms-persist.xml" />
+    <Content Include="newprojectfortesting\newprojectfortesting.sqlproj.user" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".git\COMMIT_EDITMSG" />
+    <None Include=".git\config" />
+    <None Include=".git\description" />
+    <None Include=".git\HEAD" />
+    <None Include=".git\hooks\applypatch-msg.sample" />
+    <None Include=".git\hooks\commit-msg.sample" />
+    <None Include=".git\hooks\post-update.sample" />
+    <None Include=".git\hooks\pre-applypatch.sample" />
+    <None Include=".git\hooks\pre-commit.sample" />
+    <None Include=".git\hooks\pre-push.sample" />
+    <None Include=".git\hooks\pre-rebase.sample" />
+    <None Include=".git\hooks\pre-receive.sample" />
+    <None Include=".git\hooks\prepare-commit-msg.sample" />
+    <None Include=".git\hooks\update.sample" />
+    <None Include=".git\index" />
+    <None Include=".git\info\exclude" />
+    <None Include=".git\logs\HEAD" />
+    <None Include=".git\logs\refs\heads\master" />
+    <None Include=".git\objects\1e\43d80b2fc494ce73f4bcc0cbee34f102267c68" />
+    <None Include=".git\objects\1f\f0c423042b46cb1d617b81efb715defbe8054d" />
+    <None Include=".git\objects\31\0577e3fac4436b5b1a0f245d3e713f79472ab1" />
+    <None Include=".git\objects\36\f429fef13509b985b0ae61b435e4e97fe584be" />
+    <None Include=".git\objects\3c\4efe206bd0e7230ad0ae8396a3c883c8207906" />
+    <None Include=".git\objects\40\e7daf1f3ccb11d54eaa71e6f37a0f83ac2d0e8" />
+    <None Include=".git\objects\91\e3470e1645e6e8d0de6fe9f6b242f366e9a393" />
+    <None Include=".git\objects\c0\2f5ac4ca0d27e2c9d4ff95e7a3dfba4ca0445c" />
+    <None Include=".git\objects\ce\e67410ec0ea18dbfe0ef0bae254e4979fc2f5e" />
+    <None Include=".git\refs\heads\master" />
+    <None Include=".vs\newprojectfortesting\v15\.suo" />
+    <None Include="newprojectfortesting\newprojectfortesting.sqlproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="newprojectfortesting\Class1.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".git\objects\info\" />
+    <Folder Include=".git\objects\pack\" />
+    <Folder Include=".git\refs\tags\" />
+    <Folder Include=".vs\Git\v15\" />
+    <Folder Include="My Project\" />
+    <Folder Include="newprojectfortesting\bin\Debug\" />
+    <Folder Include="newprojectfortesting\obj\Debug\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
